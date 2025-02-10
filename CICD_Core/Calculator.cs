@@ -5,6 +5,7 @@ namespace CICD_Core
     {
         public static double Divide(int v1, int v2)
         {
+            int a = 0;
             if (v2 == 0)
             {
                 throw new DivideByZeroException();
