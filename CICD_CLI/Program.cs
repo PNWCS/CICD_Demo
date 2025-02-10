@@ -1,3 +1,4 @@
+
 ﻿using System.ComponentModel;
 using CICD_Core;
 
@@ -6,7 +7,6 @@ int a, b;
 while (true)
 {
     string? s = Console.ReadLine();
-
     if (!int.TryParse(s, out a))
     {
         Console.WriteLine("Error: please enter an integer");
@@ -16,8 +16,8 @@ while (true)
         break;
     }
 }
+Console.WriteLine("Enter the second Number");
 
-Console.WriteLine("Enter the second number:");
 while (true)
 {
     string? s = Console.ReadLine();
@@ -31,5 +31,5 @@ while (true)
     }
 }
 
-double res = Calculator.Divide(a, b);
-Console.WriteLine($"{a} / {b} = {res}");
+double d = Calculator.Divide(a, b);
+Console.WriteLine($"{a} / {b} = {d}");
