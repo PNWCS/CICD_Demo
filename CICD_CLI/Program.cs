@@ -1,2 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using CICD_Core;
+
+Console.WriteLine("Enter your first number: ");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter your second number: ");
+int b = int.Parse(Console.ReadLine());
+double result = Calculator.Divide(a, b);
+Console.WriteLine($"{a}/{b}={result}");
