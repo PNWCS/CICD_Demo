@@ -1,8 +1,5 @@
 ﻿using CICD_Core;
-
 Console.WriteLine("Enter the first Number");
-
-
 int a, b;
 while (true)
 {
@@ -29,7 +26,5 @@ while (true)
         break;
     }
 }
-
-
 double d = Calculator.Divide(a, b);
 Console.WriteLine($"{a} / {b} = {d}");
