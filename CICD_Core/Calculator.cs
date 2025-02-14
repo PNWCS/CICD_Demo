@@ -1,4 +1,5 @@
-﻿namespace CICD_Core
+﻿
+namespace CICD_Core
 {
     public class Calculator
     {
@@ -8,8 +9,7 @@
             {
                 throw new DivideByZeroException();
             }
-            return a / b;
-
+            return (double)a / (double)b;
         }
     }
 }
